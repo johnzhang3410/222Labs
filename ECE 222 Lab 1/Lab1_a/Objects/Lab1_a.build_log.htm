@@ -1,0 +1,98 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Eric Praetzel, ECE Dept, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.35.0.2
+Toolchain Path:  C:\Software\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.164.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\f232zhan\Desktop\Lab1_a\Lab1_a.uvprojx
+Project File Date:  09/24/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Software\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+"Lab1_a.s", line 51 (column 16): Warning: A1865W: '#' not seen before constant expression
+   51 00000014  LDR   R0, [R1, GPIOA_OUT] ; Read GPIOA output type register
+                              ^
+"Lab1_a.s", line 53 (column 16): Warning: A1865W: '#' not seen before constant expression
+   53 0000001a  STR   R0, [R1, GPIOA_OUT] ; Write back the output type 
+                              ^
+"Lab1_a.s", line 59 (column 16): Warning: A1865W: '#' not seen before constant expression
+   59 0000001c  LDR   R0, [R1, GPIOA_DAT] ; Read GPIOA data register
+                              ^
+"Lab1_a.s", line 60 (column 12): Warning: A1865W: '#' not seen before constant expression
+   60 0000001e  ORR.W  R0, B5_SET_MSK  ; Turn on LED (Sets ODR5) 
+                          ^
+"Lab1_a.s", line 61 (column 16): Warning: A1865W: '#' not seen before constant expression
+   61 00000022  STR   R0, [R1, GPIOA_DAT] ; Write back the data to output data register
+                              ^
+"Lab1_a.s", line 63 (column 11): Warning: A1865W: '#' not seen before constant expression
+   63 00000024  TST   R0, B5_SET_MSK
+                         ^
+"Lab1_a.s", line 65 (column 16): Warning: A1865W: '#' not seen before constant expression
+   65 00000028  LDR   R0, [R1, GPIOA_DAT] ; Read GPIOA data register
+                              ^
+"Lab1_a.s", line 66 (column 12): Warning: A1865W: '#' not seen before constant expression
+   66 0000002a  AND.W  R0, B5_CLR_MSK  ; Turn off LED (clears ODR5) 
+                          ^
+"Lab1_a.s", line 67 (column 16): Warning: A1865W: '#' not seen before constant expression
+   67 0000002e  STR   R0, [R1, GPIOA_DAT] ; Write back the data to output data register
+                              ^
+"Lab1_a.s", line 78 (column 16): Warning: A1865W: '#' not seen before constant expression
+   78 00000030  LDR   R0, [R1, GPIOA_DAT] ; Read GPIOA data register
+                              ^
+"Lab1_a.s", line 79 (column 12): Warning: A1865W: '#' not seen before constant expression
+   79 00000032  AND.W  R0, B5_CLR_MSK  ; Turn off LED (clears ODR5) 
+                          ^
+"Lab1_a.s", line 80 (column 16): Warning: A1865W: '#' not seen before constant expression
+   80 00000036  STR   R0, [R1, GPIOA_DAT] ; Write back the data to output data register
+                              ^
+"Lab1_a.s", line 95 (column 16): Warning: A1865W: '#' not seen before constant expression
+   95 00000048  LDR   R0, [R1, GPIOA_DAT] ; Read GPIOA data register
+                              ^
+"Lab1_a.s", line 96 (column 12): Warning: A1865W: '#' not seen before constant expression
+   96 0000004a  ORR.W  R0, B5_SET_MSK  ; Turn on LED (Sets ODR5) 
+                          ^
+"Lab1_a.s", line 97 (column 16): Warning: A1865W: '#' not seen before constant expression
+   97 0000004e  STR   R0, [R1, GPIOA_DAT] ; Write back the data to output data register
+                              ^
+"Lab1_a.s", line 112: Warning: A1581W: Added 2 bytes of padding at address 0x62
+  112 00000064  END 
+0 Errors, 16 Warnings
+assembling Lab1_a.s...
+assembling startup_stm32f401xe.s...
+linking...
+Program Size: Code=176 RO-data=404 RW-data=0 ZI-data=1536  
+".\Objects\Lab1_a.elf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Software\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
