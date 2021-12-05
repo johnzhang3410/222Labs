@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Eric Praetzel, ECE Dept, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.35.0.2
+Toolchain Path:  C:\Software\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.164.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\f232zhan\Desktop\lab2\L2.uvprojx
+Project File Date:  10/12/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Software\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f401xe.s...
+"Lab2.s", line 250 (column 17): Warning: A1865W: '#' not seen before constant expression
+  250 000000b6   LDR   R0, [R1, GPIOA_DAT]
+                               ^
+"Lab2.s", line 251 (column 12): Warning: A1865W: '#' not seen before constant expression
+  251 000000b8   ORR   R0, B5_SET_MSK
+                          ^
+"Lab2.s", line 252 (column 17): Warning: A1865W: '#' not seen before constant expression
+  252 000000bc   STR   R0, [R1, GPIOA_DAT]
+                               ^
+0 Errors, 3 Warnings
+assembling Lab2.s...
+linking...
+Program Size: Code=376 RO-data=404 RW-data=0 ZI-data=1536  
+".\Objects\L2.elf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Software\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
